@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add our required metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is my first Pizza Website">
+    <title>Order Page</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Add our fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap">
+
+    <!-- Add our own CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Add our own Js -->
+    <script src="./js/app.js"></script>
+
+</head>
+
+<body class="order-body">
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <img src="./imgs/pngegg.png" alt="header-logo">
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./order.html">Place Order</a></li>
+                <li><a href="#">Delivery 705-123-4567</a></li>
+            </ul>
+        </div>
+
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+    </nav>
+
+
+    <section class="form-container">
+
+        <!-- Create Form -->
+        <form id="form" action="./imgs/Customer-Thank-You-Note-1.png">
+
+            <h1>Place your Order</h1>
+
+            <!-- Details -->
+            <div class="form-control">
+
+                <label for="name" id="label-name">
+                    First Name
+                </label>
+
+                <!-- Input Type Text -->
+                <input type="text" id="name" placeholder="Enter your First Name" required>
+
+            </div>
+
+            <div class="form-control">
+
+                <label for="lname" id="label-lname">
+                    Last Name
+                </label>
+
+                <!-- Input Type Text -->
+                <input type="text" id="lname" placeholder="Enter your Last Name" required>
+
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+
+                <!-- Input Type Email-->
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-control">
+                <label for="phone" id="label-phone">
+                    Enter your Phone Numer
+                </label>
+
+                <!-- Input Type Email-->
+                <input type="tel" id="phone" placeholder="(705)-123-4567" maxlength="10" required>
+            </div>
+
+            <div class="form-control">
+                <label for="address">
+                    Address
+                </label>
+
+                <!-- Input Type Text -->
+                <textarea id="address" placeholder="Address Line 1" required></textarea>
+            </div>
+
+            <div class="form-control">
+                <label for="delivery-pickup" id="label-pickup">
+                    Choose Delivery or Pick Up
+                </label>
+
+                <!-- Dropdown options -->
+                <select id="delivery-pickup" name="delivery-pickup">
+                    <option value="delivery">Delivery</option>
+                    <option value="pickup">Pick Up</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label>Select your order
+                    <small>(Check all that apply)</small>
+                </label>
+                <!-- Input Type Checkbox -->
+                <label for="inp-1">
+                    <input type="checkbox" id="inp-1" name="inp" value="16.99">Pepperoni Lover's - $16.99
+                </label>
+                <label for="inp-2">
+                    <input type="checkbox" id="inp-2" name="inp" value="19.99">Meat Lover's - $19.99
+                </label>
+                <label for="inp-3">
+                    <input type="checkbox" id="inp-3" name="inp" value="17.99">Canadian - $17.99
+                </label>
+                <label for="inp-4">
+                    <input type="checkbox" id="inp-4" name="inp" value="14.99">Cheese Lover's - $14.99
+                </label>
+                <label for="inp-5">
+                    <input type="checkbox" id="inp-5" name="inp" value="16.99">Super Supreme Lover's - $16.99
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" id="inp-6" name="inp" value="16.99">Hawaiian - $16.99
+                </label>
+                <label for="inp-7">
+                    <input type="checkbox" id="inp-7" name="inp" value="18.99">Italian - $18.99
+                </label>
+                <label for="inp-8">
+                    <input type="checkbox" id="inp-8" name="inp" value="6.99">Poutine - $6.99
+                </label>
+                <label for="inp-9">
+                    <input type="checkbox" id="inp-9" name="inp" value="12.99">Chicken Wings (8 pcs) - $12.99
+                </label>
+                <label for="inp-10">
+                    <input type="checkbox" id="inp-10" name="inp" value="5.99">Onion Rings - $5.99
+                </label>
+                <label for="inp-11">
+                    <input type="checkbox" id="inp-11" name="inp" value="4.65">Breadsticks - $4.65
+                </label>
+                <label for="inp-12">
+                    <input type="checkbox" id="inp-12" name="inp" value="8.99">Garlic Bread - $8.99
+                </label>
+            </div>
+
+
+            <div class="form-control">
+                <label>
+                    Preferred payment option
+                </label>
+
+                <!-- Input Type Radio Button -->
+                <label for="payment-1">
+                    <input type="radio" id="payment-1" name="payment" required>Credit/Debit
+                </label>
+                <label for="payment-2">
+                    <input type="radio" id="payment-2" name="payment">Cash
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label for="comment">
+                    Any comments or special request to the restaurant
+                </label>
+
+                <!-- multi-line text input control -->
+                <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+
+            </div>
+
+            <!-- this table will show the subtotal, tax and total for the user to see -->
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal">$ 0.00</td>
+                </tr>
+                <tr>
+                    <td>HST (13%)</td>
+                    <td id="hst">$ 0.00</td>
+                </tr>
+                <tr>
+                    <td><b>Total</b></td>
+                    <td id="total"><b>$ 0.00</b></td>
+                </tr>
+            </table>
+
+
+            <!-- Submit order button in the form -->
+            <button type="submit" value="submit">
+                Submit Order
+            </button>
+        </form>
+
+    </section>
+
+</body>
+
+</html>

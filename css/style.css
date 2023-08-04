@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+p,
+a,
+li,
+figcaption {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    cursor: url(../imgs/pizza2.png), auto;
+    height: auto;
+}
+
+/* Styling our Navigation Bar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-brand {
+    width: auto;
+    height: 100px;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 100%;
+    margin-left: 1rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* Styling the Body element i.e. Color,
+        Font, Alignment */
+.order-body {
+    background: url("../imgs/background-video2.jpg");
+    font-family: 'roboto', sans-serif;
+    height: auto;
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling form-control Class */
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+        select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 12px;
+    display: block;
+    width: 95%;
+}
+
+/* Styling form-control Radio
+        button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+
+}
+
+/* styling of the totals table at the end of the form */
+
+#total {
+    font-size: 1.1em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px auto;
+}
+
+th,
+td {
+    border: none;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Styling Button */
+button {
+    background-color: #05c46b;
+    color: white;
+    border: 1px solid #777;
+    padding: 20px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#home-btn {
+    text-decoration: none;
+    background-color: #05c46b;
+    color: white;
+    border: 1px solid #777;
+    padding: 20px;
+    border-radius: 2px;
+    font-family: 'roboto', sans-serif;
+    font-size: 21px;
+    display: block;
+    width: 20%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin: 50px 40%;
+}
+
+
+/* Video */
+
+/* Center the video horizontally */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-image: url("../imgs/background-video2.jpg");
+    background-size: cover;
+}
+
+/* Style the video element */
+video {
+    max-width: 50%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin: 0;
+}
+
+
+/* styling of the menu items (images) */
+
+.menu-container {
+    margin: 0 17%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    /* Adjust the gap between images */
+
+}
+
+.menu-container img {
+    width: 350px;
+    height: 300px;
+    border: 0.5px solid white;
+    box-shadow: 10px 10px 5px;
+    /* Add box shadow to images */
+    margin: 30px 20px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.menu-container img:hover {
+    transform: scale(1.1);
+}
+
+.menu-item {
+    flex-basis: calc(30% - 10px);
+    /* Each item takes up one-third of the container width minus gap */
+    margin: 0;
+}
+
+.button-container {
+    text-align: center;
+}
+
+/* This will make the page responsive, will adjust the item menu images and the video container and the hamburger button */
+
+@media(max-width: 1100px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 1.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .menu-container {
+        margin: 0 20%;
+    }
+
+    .menu-item {
+        flex-basis: calc(10% - 10px);
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+}

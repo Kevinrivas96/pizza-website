@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Add our required metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is my first Pizza Website">
+    <title>Pizza Website</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Add our fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap">
+
+    <!-- Add our own CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Add our own Js -->
+    <script src="./js/app.js"></script>
+
+</head>
+
+<body>
+    <!-- to get started we will be using a standard navbar -->
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <img src="./imgs/pngegg.png" alt="header-logo">
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./order.html">Place Order</a></li>
+                <li><a href="#">Delivery 705-123-4567</a></li>
+            </ul>
+        </div>
+
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+    </nav>
+
+    <!-- this will be our video container -->
+    <section>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="./imgs/video-(2160p).mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- this sections will the display the images and prices of the menu items -->
+    <h2>Full Menu</h2>
+    <section class="menu-container">
+
+        <figure class="menu-item">
+            <img src="./imgs/peperroni2.jpg" alt="menu-item">
+            <figcaption>Pepperoni Lover's - $16.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/meat-lovers.jpg" alt="menu-item">
+            <figcaption>Meat Lover's - $19.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/canadian.webp" alt="menu-item">
+            <figcaption>Canadian - $17.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/cheese.jpg" alt="menu-item">
+            <figcaption>Cheese Lover's - $14.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/supreme.jpg" alt="menu-item">
+            <figcaption>Super Supreme Lover's - $16.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/hawaiian.jpg" alt="menu-item">
+            <figcaption>Hawaiian - $16.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/italian.jpg" alt="menu-item">
+            <figcaption>Italian - $18.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/poutine.jpg" alt="menu-item">
+            <figcaption>Poutine - $6.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/wings.jpg" alt="menu-item">
+            <figcaption>Chicken Wings (8 pcs) - $12.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/onion-rings.jpg" alt="menu-item">
+            <figcaption>Onion Rings - $5.99</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/breadsticks.jpg" alt="menu-item">
+            <figcaption>Breadsticks - $4.65</figcaption>
+        </figure>
+
+        <figure class="menu-item">
+            <img src="imgs/garlic-bread.jpg" alt="menu-item">
+            <figcaption>Garlic Bread - $8.99</figcaption>
+        </figure>
+
+    </section>
+
+    <!-- add a button at the end of the page to take the user to the order page -->
+    <div class="button-container">
+        <a href="./order.html" id="home-btn">ORDER NOW</a>
+    </div>
+
+</body>
+
+
+</html>
